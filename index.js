@@ -8,3 +8,12 @@ function printString(myString) {
     return true;
   }
 }
+
+
+function reverseString(str) {
+  if (str.length < 2) {
+    return str;
+  } else {
+    return reverseString(str.substring(1) + str[0])
+  }
+}
