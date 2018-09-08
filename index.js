@@ -22,7 +22,7 @@ function isPalindrome(str) {
   if (str.length < 2) {
     return true;
   } else if (str[str.length - 1] === str[0]) {
-    return isPalindrome(str.substring(1, l - 1));
+    return isPalindrome(str.substring(1, str.length-1);
   } else {
     return false;
   }
