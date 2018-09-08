@@ -17,3 +17,13 @@ function reverseString(str) {
     return reverseString(str.substring(1) + str[0])
   }
 }
+
+function isPalindrome(str) {
+  if (str.length < 2) {
+    return true;
+  } else if (str[str.length-1] === str[0]){
+    return isPalindrome(str.substring(1))
+  } else {
+    return false;
+  }
+}
